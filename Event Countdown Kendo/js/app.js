@@ -16,7 +16,7 @@ var onDeviceReady = function() {
     homeView.render();
     
     
-    //var eventDetailView = new App.Views.EventDetail({el: $('#eventDetail'), collection: model});
+    var eventDetailView = new App.Views.EventDetail({el: $('#eventDetail'), collection: model});
     //var newEventView = new App.Views.NewEvent({el: $('#newEvent'), collection: model});
     
     model.fetch();

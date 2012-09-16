@@ -16,6 +16,7 @@
         <script src="js/app.js" type="text/javascript"></script>
         <script src="js/models/Event.js" type="text/javascript"></script>
         <script src="js/views/Home.js" type="text/javascript"></script>
+        <script src="js/views/EventDetail.js" type="text/javascript"></script>
         
     </head>
     <body>
@@ -28,6 +29,33 @@
             </header>
             <div class="nav"></div>
 		</div>
-
+        
+        
+        <div data-role="view" data-title="Detail" id="eventDetail">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+                    <span data-role="view-title" class="view-title"></span>
+                </div>
+            </header>
+            <div data-role="content">
+                <!--<div class="detail-background-container">
+                    <img id="detail-background">
+                </div> -->
+                <div class="content-container">
+                    <h2>
+                        <span id="detail-header"></span> on <span id="event-date"></span>
+                    </h2>
+                    <div id="event-has-past">This event has passed</div>
+                    <div class="report">
+                        <div><span id="days-away"></span> days away</div>
+                        <div><span id="hours-away"></span> hours away</div>
+                        <div><span id="minutes-away"></span> minutes away</div>
+                        <div><span id="seconds-away"></span> seconds away</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>

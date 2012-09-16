@@ -54,6 +54,7 @@
     <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\models\Event.js" />
+    <Content Include="js\views\EventDetail.js" />
     <Content Include="js\views\Home.js" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
