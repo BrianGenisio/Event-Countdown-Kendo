@@ -14,7 +14,7 @@ App.Views.Home = Backbone.View.extend({
     render: function() {
         this.$(".nav", this.el).html(this.template());
         this.model.each(this.renderItem);
-        this.$el.trigger('create');
+        this.$(".nav ul", this.el).kendoMobileListView();
         return this;
     },
     
