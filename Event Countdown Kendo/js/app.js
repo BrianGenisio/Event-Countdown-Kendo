@@ -17,10 +17,10 @@ var onDeviceReady = function() {
     
     
     var eventDetailView = new App.Views.EventDetail({el: $('#eventDetail'), collection: model});
-    //var newEventView = new App.Views.NewEvent({el: $('#newEvent'), collection: model});
+    var newEventView = new App.Views.NewEvent({el: $('#newEvent'), collection: model});
     
     model.fetch();
-    var app = new kendo.mobile.Application(document.body);
+    
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);
