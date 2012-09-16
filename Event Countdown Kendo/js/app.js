@@ -16,11 +16,15 @@ var onDeviceReady = function() {
     homeView.render();
     
     
-    var eventDetailView = new App.Views.EventDetail({el: $('#eventDetail'), collection: model});
-    var newEventView = new App.Views.NewEvent({el: $('#newEvent'), collection: model});
+    App.eventDetailView = new App.Views.EventDetail({el: $('#eventDetail'), collection: model});
+    App.newEventView = new App.Views.NewEvent({el: $('#newEvent'), collection: model});
     
     model.fetch();
     
+}
+
+function show() {
+    App.newEventView.pageShown();
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);

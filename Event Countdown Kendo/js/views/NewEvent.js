@@ -8,8 +8,6 @@ App.Views.NewEvent = Backbone.View.extend({
         this.collection = options.collection; 
         
         _.bindAll(this, "pageShown");
-        
-        $(document).on("pageshow", '[data-role=page]', this.pageShown);
     },
    
     pageShown: function(e, ui) {
