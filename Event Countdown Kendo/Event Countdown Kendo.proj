@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\models\Event.js" />
+    <Content Include="js\views\Home.js" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
     <Content Include="kendo\styles\images\ios-sprite.png" />
@@ -59,7 +62,6 @@
     <Content Include="kendo\styles\images\iconmasks.svg" />
     <Content Include="kendo\styles\images\android-sprite.png" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
-    <Content Include="scripts\hello-world.js" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
@@ -69,6 +71,9 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
+    <Content Include="vendor\backbone.js" />
+    <Content Include="vendor\backbone.localstorage.js" />
+    <Content Include="vendor\underscore.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
 </Project>
